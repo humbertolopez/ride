@@ -21,6 +21,7 @@
                 title: post.title.rendered+' ─ '+blogname
             }
         },
+        layout: 'interior',
         async asyncData({params}){
             const slug = params.slug
             const post = await fetch(

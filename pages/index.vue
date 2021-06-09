@@ -1,7 +1,7 @@
 <template>
     <section class="grid grid-cols-1 lg:grid-cols-3">
-        <div id="home-posts-list" class="col-span-2 grid-cols-1 lg:grid grid-cols-2">
-            <div v-for="post in posts" class="post-item border-b border-gray-300 px-6 py-10">
+        <div id="home-posts-list">
+            <div v-for="post in posts" class="post-item" :key="post.id">
                 <div>
                     <img class="w-full object-cover" :src="post._embedded['wp:featuredmedia'][0].media_details.sizes['index-post'].source_url" :alt="post._embedded['wp:featuredmedia'][0].alt_text"></img>
                 </div>
