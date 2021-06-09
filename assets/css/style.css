@@ -1,0 +1,66 @@
+#nav a:hover, .post-title a:hover {
+    @apply text-ride;
+}
+#nav a, .post-title a {
+    @apply text-ride-dark;
+}
+h1 {
+    @apply mx-24 text-ride-dark font-nunito text-4xl font-semibold;
+}
+p {
+    @apply my-2 mx-6;
+}
+.wp-block-image img {
+    @apply w-full object-cover;
+}
+#single-post h1 {
+    @apply mt-8 mb-4 text-center leading-normal;
+}
+#single-post .date {
+    @apply mb-4 text-center text-gray-400 text-sm leading-loose;
+}
+#single-post p {
+    @apply mx-24 my-6 leading-loose text-gray-600;
+}
+#single-post h5 {
+    @apply mx-24 my-6 leading-loose font-nunito font-semibold text-2xl;
+}
+figcaption {
+    @apply text-center text-gray-400 text-sm leading-loose;
+}
+.twitter-tweet {
+    @apply mx-auto;
+}
+#home-posts-list h2 {
+    @apply font-nunito font-semibold text-2xl m-6 leading-normal;
+}
+.sidebar-category-list {
+    @apply mb-4;
+}
+.list-category-title {
+    @apply font-nunito font-semibold text-ride-dark text-xl;
+}
+.excerpt {
+    @apply leading-relaxed text-gray-600;
+}
+#destacados-bar {
+    @apply container mx-auto py-10 px-6 grid grid-cols-6 grid-rows-3;
+}
+#destacados-bar h2 {
+    @apply text-white absolute font-nunito font-semibold;
+}
+.destacados-item:first-child {
+    @apply col-span-3 row-span-3;
+    height: 495px;
+}
+.destacados-item:first-child h2 {
+    @apply text-2xl drop-shadow;
+}
+.destacados-item:nth-child(2){
+    @apply col-span-2 row-span-3;
+    height: 495px;
+}
+.destacados-item:nth-child(n+3){
+    @apply col-span-1 row-span-1;
+    height: 165px;
+}
